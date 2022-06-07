@@ -1,5 +1,5 @@
-import catchRainbow1 from "./catchRainbow.js";
-import {hello} from "./catchRainbow.js"; 
+import catchRainbow1 from "./rainbow.js";
+import {rainbowTxt} from "./rainbow.js"; 
 
 catchRainbow1()
     .then(response => {
@@ -11,5 +11,5 @@ catchRainbow1()
         console.error(error);
     });
 
-    hello();
+    rainbowTxt();
 
