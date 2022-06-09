@@ -1,14 +1,12 @@
+//Challenge: Fetch a txt file
+
 const rainbowTxt = async () => {
     const response = await fetch("assets/rainbow.txt");
-    console.log(response);
     const text = await response.text();
-    console.log(text);
     let paragraph = document.createElement("p");
     paragraph.classList.add("paragraph");
     paragraph.innerText = text;
-    console.log(paragraph);
     let container1 = document.getElementById("container");
-    console.log(container);
     container1.appendChild(paragraph);
 };
 
