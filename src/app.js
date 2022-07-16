@@ -5,8 +5,7 @@ import functionArrayOfImages from "./arrayOfImages.js";
 
 catchRainbow1()
     .then(response => {
-        // console.log(response);
-        console.log("yay");
+        console.log(response);
     })
     .catch(error => {
         console.log("error!");
@@ -24,5 +23,13 @@ catchRainbow1()
 //         console.error(error);
 //     });
 
-rainbowTxt1();
-functionArrayOfImages();
+// rainbowTxt1();
+// functionArrayOfImages();
+
+// fetch("assets/rainbow.jpg").then(response => {
+//     console.log(response);
+//     return response.blob();
+// }).then(blob => {
+//     // console.log(blob);
+//     document.getElementById
+// });
