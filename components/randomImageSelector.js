@@ -1,8 +1,6 @@
 
-
-const functionArrayOfImages = () => {
+const RandomImageSelector = (str) => {
     let image_array = [];//TODO: I used .split, because I wanted to the practice with it. Use fetch to fetch the images
-    const str = "felix.png,ehonda.jpg,imflying.jpg";
     image_array = str.split(","); 
     // console.log(image_array);
 
@@ -10,9 +8,7 @@ const functionArrayOfImages = () => {
     // console.log(random_index);
     let selected_image = image_array[random_index]; 
     // console.log(selected_image);
-
-    document.getElementById("imgArray").src = `./assets/${selected_image}`;
-    
+    return selected_image;
 };
 
-export default functionArrayOfImages;
+export {RandomImageSelector};
